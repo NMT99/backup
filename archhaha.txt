@@ -1,0 +1,60 @@
+//
+//                       _oo0oo_
+//                      o8888888o
+//                      88" . "88
+//                      (| -_- |)
+//                      0\  =  /0
+//                    ___/`---'\___
+//                  .' \\|     |// '.
+//                 / \\|||  :  |||// \
+//                / _||||| -:- |||||- \
+//               |   | \\\  -  /// |   |
+//               | \_|  ''\---/''  |_/ |
+//               \  .-\__  '-'  ___/-. /
+//             ___'. .'  /--.--\  `. .'___
+//          ."" '<  `.___\_<|>_/___.' >' "".
+//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//         \  \ `_.   \_ __\ /__ _/   .-` /  /
+//     =====`-.____`.___ \_____/___.-`___.-'=====
+//                       `=---='
+//
+//
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//               ????         ??BUG
+//
+ sudo pacman -S openbox obconf menumaker xterm terminator pcmanfm tint2 picom plank xorg nitrogen gnome-backgrounds lxappearance lxhotkey
+   12  sudo pacman -S lxdm
+   13  sudo systemctl enable lsdm
+   14  sudo systemctl enable lxdm
+   15  reboot
+   16  sudo pacman -S yakuake
+   17  tint2
+   18  picom
+   19  picom
+   20  sudo picom
+   21  nitrogen
+   22  plank
+   23  cd .config/
+   24  ls
+   25  mkdir openbox
+   26  cd openbox/
+   27  nano autostart
+   28  init 6
+   29  sudo init 6
+   30  ls
+   31  sh autostart
+   32  cd openbox/
+   33  cd .config/
+   34  cd
+   35  cd .config/openbox/
+   36  nano autostart
+   37  sh autostart
+   38  sudo init 6
+   39  reboot
+   40  pacman -S htop
+   41  sudo pacman -S htop
+   42  htop
+   43  plank
+   44  plank
+   45  plank

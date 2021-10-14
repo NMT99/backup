@@ -1,0 +1,42 @@
+
+
+pacman -Syy ;
+fdisk -l
+cfdisk ...
+#boot
+mkfs.fat -F32 /dev/sda1
+#data  
+mkfs.ext4 /dev/sda2
+
+# mount /dev/sda2 /mnt
+pacstrap /mnt base linux linux-firmware sudo nano
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt /bin/bash
+timedatectl set-timezone Asia/Ho_Chi_Minh
+nano /etc/locale.gen
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+export LANG=en_US.UTF-8
+echo pc > /etc/hostname
+nano /etc/hosts
+127.0.0.1	localhosts
+::1	localhost
+127.0.1.1	pc
+passwd
+pacman -S grub efibootmgr
+mkdir /boot/efi
+mount /dev/sda1 /boot/efi
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
+grub-mkconfig -o /boot/grub/grub.cfg
+pacman -S networkmanager
+systemctl enable NetworkManager
+exit
+umount -R /mnt
+reboot
+# mkswap /dev/sdb3
+# swapon /dev/swap partition
+usermod -aG wheel tu
+useradd -m tu -G wheel
+passwd tu
+# pacman -S lightdm lightdm-gtk-greeter openbox obconf pcmanfm tint2 xterm nitrogen geany termite
+ 

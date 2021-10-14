@@ -1,0 +1,28 @@
+
+sudo nano .config/fish/config.fish
+
+
+neofetch --disable cpu memory --ascii_distro archlinux
+set fish_greeting Have a good day! $USER$hostname
+# you can use echo in second line
+# Define alias in shell
+alias conda "export PATH=/home/tu/anaconda3/bin/:$PATH ; anaconda-navigator"
+alias xampp "sudo /opt/lampp/lampp start"
+alias xamppstop "sudo /opt/lampp/lampp stop"
+free -h
+alias sd "shutdown now"
+alias cl "sudo pacman -Scc --noconfirm"
+
+
+
+neofetch --disable cpu memory --ascii_distro archlinux
+set fish_greeting Have a good day! $USER$hostname
+# you can use echo in second line
+# Define alias in shell
+alias conda "export PATH=/home/tu/anaconda3/bin/:$PATH ; anaconda-navigator"
+alias xampp "sudo /opt/lampp/lampp start"
+alias xamppstop "sudo /opt/lampp/lampp stop"
+free -h
+alias sd "shutdown now"
+alias rb "reboot"
+alias cl "sudo pacman -Scc --noconfirm"
