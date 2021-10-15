@@ -1,5 +1,3 @@
-
-
 pacman -Syy ;
 fdisk -l
 cfdisk ...
